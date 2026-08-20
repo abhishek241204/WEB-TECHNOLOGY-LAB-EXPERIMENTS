@@ -1,0 +1,107 @@
+Source Code:
+
+<html>
+<head>
+    <title>University Admission Form</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        input, select {
+            margin: 7px;
+            padding: 6px;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>University Admission Form</h1>
+
+<form>
+
+    Name:
+    <input type="text" placeholder="Enter Name">
+    <br>
+
+    Admission No:
+    <input type="text" placeholder="Admission No">
+    <br>
+
+    Father's Name:
+    <input type="text" placeholder="Father's Name">
+    <br>
+
+    Mother's Name:
+    <input type="text" placeholder="Mother's Name">
+    <br>
+
+    Gender:
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <br>
+
+    Blood Group:
+    <select>
+        <option>Select</option>
+        <option>A+</option>
+        <option>B+</option>
+        <option>O+</option>
+        <option>AB+</option>
+    </select>
+    <br>
+
+    Contact No:
+    <input type="text" placeholder="Contact Number">
+    <br>
+
+    Email:
+    <input type="email" placeholder="Email">
+    <br>
+
+    Course:
+    <select>
+        <option>BCA</option>
+        <option>BBA</option>
+        <option>B.Tech</option>
+        <option>B.Com</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+<br>
+
+<center>
+    <a href="table.html">Click here to see student details</a>
+</center>
+
+</body>
+</html>
+
+Output:
+
