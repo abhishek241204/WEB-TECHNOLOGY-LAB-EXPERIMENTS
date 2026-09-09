@@ -1,0 +1,230 @@
+<html>
+<head>
+    <title>University Admission Form</title>
+
+    <style>
+
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .vertical {
+            width: 180px;
+            height: 100vh;
+            background-color: black;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .vertical h2 {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            background-color: black;
+        }
+
+        .vertical a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+             .vertical a:hover {
+            background-color: blue;
+        }
+
+        .main {
+            margin-left: 180px;
+        }
+
+
+        .horizontal {
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .horizontal li {
+            display: inline-block;
+        }
+
+        .horizontal a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .horizontal a:hover {
+            background-color: blue;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 150px;
+            text-align: left;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightblue;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        input, select {
+            margin: 7px;
+            padding: 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="vertical">
+
+    <h2>Student Menu</h2>
+
+    <a href="#">Dashboard</a>
+    <a href="#">Student Details</a>
+    <a href="#">Faculty</a>
+    <a href="#">Time Table</a>
+    <a href="#">Results</a>
+    <a href="#">Fees</a>
+    <a href="#">Attendance</a>
+    <a href="#">Library</a>
+    <a href="#">Examinations</a>
+    <a href="#">Logout</a>
+
+</div>
+
+<div class="main">
+
+    <ul class="horizontal">
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">About</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">Courses</a>
+
+        </li>
+
+        <li>
+            <a href="#">Admission</a>
+        </li>
+
+        <li>
+            <a href="#">Contact</a>
+        </li>
+
+    </ul>
+
+    <h1>University Admission Form</h1>
+
+    <form>
+
+        Name:
+        <input type="text" placeholder="Enter Name">
+        <br>
+
+        Admission No:
+        <input type="text" placeholder="Admission No">
+        <br>
+
+        Father's Name:
+        <input type="text" placeholder="Father's Name">
+        <br>
+
+        Mother's Name:
+        <input type="text" placeholder="Mother's Name">
+        <br>
+
+        Gender:
+
+        <input type="radio" name="gender">
+        Male
+
+        <input type="radio" name="gender">
+        Female
+
+        <br>
+
+        Blood Group:
+
+        <select>
+            <option>Select</option>
+            <option>A+</option>
+            <option>B+</option>
+            <option>O+</option>
+            <option>AB+</option>
+        </select>
+
+        <br>
+
+        Contact No:
+        <input type="text" placeholder="Contact Number">
+        <br>
+
+        Email:
+        <input type="email" placeholder="Email">
+        <br>
+
+        Course:
+
+        <select>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>B.Com</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+</body>
+</html>
