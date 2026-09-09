@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Student Admission Details</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkgreen;
+        }
+
+        table {
+            width: 95%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>University Student Admission Details</h1>
+
+<table>
+
+    <tr>
+        <th>Name</th>
+        <th>Admission No</th>
+        <th>Gender</th>
+        <th>Father's Name</th>
+        <th>Mother's Name</th>
+        <th>Blood Group</th>
+        <th>Contact No</th>
+        <th>Course</th>
+    </tr>
+
+    <tr>
+        <td>Rahul Kumar</td>
+        <td>JNU101</td>
+        <td>Male</td>
+        <td>Ramesh Kumar</td>
+        <td>Sunita Kumar</td>
+        <td>O+</td>
+        <td>9876543210</td>
+        <td>BCA</td>
+    </tr>
+
+    <tr>
+        <td>Priya Sharma</td>
+        <td>JNU102</td>
+        <td>Female</td>
+        <td>Rajesh Sharma</td>
+        <td>Meena Sharma</td>
+        <td>A+</td>
+        <td>9876543211</td>
+        <td>BBA</td>
+    </tr>
+
+    <tr>
+        <td>Aman Singh</td>
+        <td>JNU103</td>
+        <td>Male</td>
+        <td>Vijay Singh</td>
+        <td>Rekha Singh</td>
+        <td>B+</td>
+        <td>9876543212</td>
+        <td>BCA</td>
+    </tr>
+
+    <tr>
+        <td>Neha Verma</td>
+        <td>JNU104</td>
+        <td>Female</td>
+        <td>Suresh Verma</td>
+        <td>Anita Verma</td>
+        <td>AB+</td>
+        <td>9876543213</td>
+        <td>B.Tech</td>
+    </tr>
+
+    <tr>
+        <td>Arjun Patel</td>
+        <td>JNU105</td>
+        <td>Male</td>
+        <td>Mahesh Patel</td>
+        <td>Priya Patel</td>
+        <td>O+</td>
+        <td>9876543214</td>
+        <td>B.Com</td>
+    </tr>
+
+</table>
+
+<br>
+
+<center>
+    <a href="form.html">Click here to go back</a>
+</center>
+
+</body>
+</html>
