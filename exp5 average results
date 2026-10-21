@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Student Marks</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin: 
+
+            background-image: url("C:/ABHISHEK KR SINGH/borderr.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        h2 {
+            padding-top: 80px;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+        #result {
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Marks</h2>
+
+<input id="m1" placeholder="SUBJECT 1 Marks">
+<input id="m2" placeholder="SUBJECT 2 Marks">
+<input id="m3" placeholder="SUBJECT 3 Marks">
+<input id="m4" placeholder="SUBJECT 4 Marks">
+<input id="m5" placeholder="SUBJECT 5 Marks">
+<input id="m6" placeholder="SUBJECT 6 Marks">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+
+function calculate() {
+
+    let m1 = Number(document.getElementById("m1").value);
+    let m2 = Number(document.getElementById("m2").value);
+    let m3 = Number(document.getElementById("m3").value);
+    let m4 = Number(document.getElementById("m4").value);
+    let m5 = Number(document.getElementById("m5").value);
+    let m6 = Number(document.getElementById("m6").value);
+
+    let average = (m1 + m2 + m3 + m4 + m5 + m6) / 6;
+
+    let grade;
+
+    if (average >= 90)
+        grade = "A+";
+    else if (average >= 80)
+        grade = "A";
+    else if (average >= 70)
+        grade = "B";
+    else if (average >= 60)
+        grade = "C";
+    else if (average >= 50)
+        grade = "D";
+    else
+        grade = "F";
+
+    document.getElementById("result").innerHTML =
+        "Average Marks Of The Student: " + average.toFixed(1) +
+        "<br>Grade: " + grade;
+
+    console.log("Average = " + average);
+    console.log("Grade = " + grade);
+}
+
+</script>
+
+</body>
+</html>
