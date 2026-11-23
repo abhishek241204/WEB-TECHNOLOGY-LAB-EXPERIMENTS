@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>File Upload</title>
+</head>
+<body>
+
+<h2>Upload a File</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    Select File:
+    <input type="file" name="myfile" required>
+    <br><br>
+    <input type="submit" name="upload" value="Upload">
+</form>
+
+<?php
+
+if(isset($_POST['upload']))
+{
+    $filename = $_FILES['myfile']['name'];
+    $tmpname = $_FILES['myfile']['tmp_name'];
+    $size = $_FILES['myfile']['size'];
+    $type = $_FILES['myfile']['type'];
+
+    $folder = "uploads/";
+
+    $allowed = array("jpg", "jpeg", "png", "pdf");
+
+    $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+
+    if(!in_array($ext, $allowed))
+    {
+        echo "Invalid file type!";
+    }
+    else if($size > 2000000)
+    {
+        echo "File size must be less than 2MB!";
+    }
+    else
+    {
+        if(!is_dir($folder))
+        {
+            mkdir($folder);
+        }
+
+        $newname = uniqid() . "." . $ext;
+
+        if(move_uploaded_file($tmpname, $folder . $newname))
+        {
+            echo "File uploaded successfully!";
+        }
+        else
+        {
+            echo "File upload failed!";
+        }
+    }
+}
+
+?>
+
+</body>
+</html>
